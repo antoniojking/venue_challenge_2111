@@ -75,7 +75,7 @@ describe Venue do
       venue.add_patron('Cat')
 
       venue.kick_out
-
+      
       expect(venue.over_capacity?).to eq(false)
     end
   end

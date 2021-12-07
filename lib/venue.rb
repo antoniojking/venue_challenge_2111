@@ -23,4 +23,8 @@ class Venue
     number_of_patrons = @patrons.count
     number_of_patrons > @capacity
   end
+
+  def kick_out
+    @patrons.pop until @patrons.count == @capacity
+  end
 end
