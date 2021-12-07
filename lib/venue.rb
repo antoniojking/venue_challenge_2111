@@ -18,4 +18,9 @@ class Venue
       patron.upcase
     end
   end
+
+  def over_capacity
+    number_of_patrons = @patrons.count
+    number_of_patrons > @capacity
+  end
 end
